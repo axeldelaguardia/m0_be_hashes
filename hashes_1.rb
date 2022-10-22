@@ -1,29 +1,38 @@
 
-Activity:
+# Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
 # file by entering the following command in your Terminal: 
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+foods = {
+  "apples": 23, 
+  "grapes": 507, 
+  "eggs": 48
+}
+# p zoo
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+
+p foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+
+foods[:oranges] = 60
+p foods.keys
 
 
 #-------------------
@@ -37,16 +46,24 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+inbox_email = {
+  sender: "person@email.com",
+  sender_name: "Person",
+  timestamp: "6:43 AM 10/31/2022",
+  subject: "READ THIS NOW!",
+  message: "Happy Halloween :)",
+  message_read: true
+}
 # Write code that prints your email hash to the terminal.
-
+puts inbox_email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts inbox_email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts inbox_email.values
 
 
 #-------------------
@@ -84,7 +101,7 @@ posts = [
   }
 ]
 
-p posts
+# p posts
 p posts[0]
 
 
@@ -97,3 +114,32 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    sender: "person@email.com",
+    sender_name: "Person",
+    timestamp: "6:43 AM 10/31/2022",
+    subject: "READ THIS NOW!",
+    message: "Happy Halloween :)",
+    message_read: false
+  },
+  {
+    sender: "person@email.com",
+    sender_name: "Same Person",
+    timestamp: "6:45 AM 10/31/2022",
+    subject: "YOU HAVEN'T READ IT",
+    message: "Happy Halloween :)",
+    message_read: false
+  },
+  {
+    sender: "person@email.com",
+    sender_name: "Still Same Person",
+    timestamp: "6:47 AM 10/31/2022",
+    subject: "I CAN TELL!",
+    message: "Happy Halloween :)",
+    message_read: false
+  }
+]
+
+puts emails
